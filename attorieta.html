@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attoriera</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="divForm">
+        <h1 class="correct">RICERCA ATTORI</h1>
+        <form action="selectAttoriEta.php" method="get">
+            <p>Inserisci l'anno di nascita minimo:</p>
+            <input type="number" name="annoNascitaMIN" value="1950">
+            <p>Inserisci l'anno di nascita massimo:</p>
+            <input type="number" name="annoNascitaMAX" value="1960">
+            <p>Scegli il campo per cui verranno ordinati gli attori:</p>
+            <select name="campoOrdine">
+                <option value="CodAttore">CodAttore</option>
+                <option value="Nome">Nome</option>
+                <option value="AnnoNascita">AnnoNascita</option>
+                <option value="Nazionalita">Nazionalita</option>
+            </select>
+            <br>
+            <br>
+            <input class="sendButton" type="submit" value="CERCA">
+        </form>
+    </div>
+</body>
+</html>
